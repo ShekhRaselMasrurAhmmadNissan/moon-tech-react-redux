@@ -1,7 +1,7 @@
-const initialState = {};
+const initialState = { TEST: 'TEST' };
 
 const productReducer = (state = initialState, action) => {
-	return;
+	return state;
 };
 
 export default productReducer;
