@@ -16,8 +16,12 @@ const ProductCard = ({ product }) => {
 			</p>
 			<div className=" flex-1">
 				<ul className="space-y-2">
-					{product.keyFeature.map((feature) => {
-						return <li className="text-sm ">{feature}</li>;
+					{product.keyFeature.map((feature, index) => {
+						return (
+							<li key={index} className="text-sm ">
+								{feature}
+							</li>
+						);
 					})}
 				</ul>
 			</div>
